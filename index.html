@@ -7,12 +7,12 @@
     <style>
         /* Body ka style */
         body {
-            font-family: Arial, sans-serif; /* Text ka font */
+ font-family: Arial, sans-serif; /* Text ka font */
             text-align: center; /* Sare text center me dikhaye */
             background-color: #f5f5f5; /* Background color halka grey */
             margin: 0; /* Default margin hata diya */
             padding: 0;
-        }
+           }
 
         /* Header style */
         .header-a {
@@ -22,56 +22,19 @@
             font-size: 24px; /* Text size bada */
             font-weight: bold; /* Bold text */
         }
-.header-b {
-            background-color:  /*background */
-            color: black; /* Text color */
-            padding:-1px;  /* Top-bottom padding 10px, left-right 0 */
-            font-size: 20px; /* Text size bada */
+ .header-c {
+            background-color: white; /* Red background */
+            color: black; /* Text white color */
+            padding: 10px 0; /* Top-bottom padding 5px, left-right 0 */
+            font-size: 40px; /* Text size bada */
             font-weight: bold; /* Bold text */
         }
-
         /* Button style */
-        .btn {
-            display: inline-block;
-            padding: 15px 40px; /* Button ke andar space */
-            margin: 10px; /* Button ke charo taraf space */
-            font-size: 40px; /* Text size */
-            color: white; /* Text color */
-            text-decoration: none; /* Underline hata do */
-            border-radius: 5px; /* Corner thoda round */
-            cursor: pointer; /* Mouse pointer hand me aayega */
-        }
-
-        .btn-red { background-color: red; } /* Patna button red */
-        .btn-blue { background-color: orangered; } /* Nalanda button dark blue */
-	.btn1 {
-            display: inline-block;
-            padding: 15px 40px; /* Button ke andar space */
-            margin: 10px; /* Button ke charo taraf space */
-            font-size: 20px; /* Text size */
-            color: white; /* Text color */
-		background-color: green;
-            text-decoration: none; /* Underline hata do */
-            border-radius: 100px; /* Corner thoda round */
-            cursor: pointer; /* Mouse pointer hand me aayega */
-        }
-body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-    .semester-btn {
+.semester-btn {
         display: inline-block;
         margin: 20px;
         padding: 15px 25px;
-        background-color: #FF7F50;
-        color: white;
-        text-decoration: none;
-        border-radius: 18px;
-        transition: 0.3s;
- 	font-size: 30px;
-    }
-.semester-btn1 {
-        display: inline-block;
-        margin: 20px;
-        padding: 15px 25px;
-        background-color: white;
+        background-color: Darkorange;
         color: black;
         text-decoration: none;
         border-radius: 18px;
@@ -79,12 +42,25 @@ body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
  	font-size: 30px;
 font-weight: bold;
     }
-		.semester-btn2 {
+       
+.semester-btn1 {
         display: inline-block;
         margin: 20px;
         padding: 15px 25px;
-        background-color:#00FF00;
-        color: black;
+        background-color: White;
+        color: darkblue;
+        text-decoration: none;
+        border-radius: 18px;
+        transition: 0.3s;
+ 	font-size: 30px;
+font-weight: bold;
+    }
+.semester-btn2 {
+        display: inline-block;
+        margin: 20px;
+        padding: 15px 25px;
+        background-color: green;
+        color: white;
         text-decoration: none;
         border-radius: 18px;
         transition: 0.3s;
@@ -119,15 +95,37 @@ background-color: rgba(0,0,0,0.8);
 background-blend-mode: darken;
 color: white;
 }
-.pp{
-margin: 0;
-padding: 0;
-height: 100%;
-}
-img{
-width: 100vw;
-height: 5vh;
-}
+.marquee-container {
+    width: 100%;
+    overflow: hidden; /* scroll ke bahar ke photos hide ho jayein */
+    background: #fff;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+  }
+
+  .marquee-track {
+    display: flex;
+    width: calc(200px * 20 * 3); /* photo width * number of photos * 2 for looping */
+    animation: marquee 20s linear infinite; /* speed adjust kar sakte hain */
+  }
+
+  .marquee-track img {
+    width: 300px;  /* image ka width */
+    height: 150px; /* image ka height */
+    margin-right: 150px;
+    object-fit: cover; /* photo ko stretch ke bina fit kare */
+    border-radius: 8px;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); /* half width scroll kare */
+    }
+  }
     </style>
 </head>
 <body>
@@ -142,22 +140,60 @@ height: 5vh;
     <a href="ugsem-2.html" target="_blank" class="semester-btn">Part 2</a>
     <a href="ugsem-3.html" target="_blank" class="semester-btn">Part 3</a>
 <h1 style="margin: 1px 0;"> BCA - PYQ (Previous Year Question) </h1>
-    <a href="pyq.html" class="semester-btn1">Part 1</a>
+    <a href="part1.html" class="semester-btn1">Part 1</a>
     <a href="ugsem-2.html" target="_blank" class="semester-btn1">Part 2</a>
     <a href="ugsem-3.html" target="_blank" class="semester-btn1">Part 3</a>
-<h1 style="margin: 1px 0;"> BCA - Test Series </h1>
+	<h1 style="margin: 1px 0;"> BCA - Test Series </h1>
     <a href="test.html" class="semester-btn2">Part 1</a>
     <a href="ugsem-2.html" target="_blank" class="semester-btn2">Part 2</a>
     <a href="ugsem-3.html" target="_blank" class="semester-btn2">Part 3</a>
 <div class ="header-b"> <marquee> HIRA KUMAR - Guest Teacher of BCA Dept. in S.P.M College, Udantpuri,Biharsharif</marquee></div>
 <div class ="header-b"> <marquee direction="left"scrollamount="10"> Designed -- Developed -- Deployed -- maintained -- By Hira Kumar</marquee></div>
-<br></br>
+<div class="header-c"> Top MNC (Multi National Corporation) <span class="emoji"> &#128071</span> </div>
+<div class="marquee-container">
+  <div class="marquee-track">
+    <!-- Images repeat karenge takki continuous effect aaye -->
+    <img src="1p.png" alt="Photo1">
+    <img src="2.jpg" alt="Photo2">
+    <img src="3.jpg" alt="Photo3">
+    <img src="4p.png" alt="Photo4">
+    <img src="5.jpeg" alt="Photo5">
+    <img src="6p.png" alt="Photo6">
+    <img src="7p.png" alt="Photo7">
+ 	<img src="8.jpg" alt="Photo1">
+    <img src="9p.png" alt="Photo2">
+    <img src="10p.png" alt="Photo3">
+    <img src="11p.png" alt="Photo4">
+    <img src="12.jpg" alt="Photo5">
+    <img src="13p.png" alt="Photo6">
+    <img src="14.jpg" alt="Photo7">
+<img src="15p.png" alt="Photo4">
+    <img src="16p.png" alt="Photo5">
+    <img src="17p.png" alt="Photo6">
+    <img src="18p.png" alt="Photo7">
+   
+    
+    <!-- Repeat same images for continuous scrolling --><img src="1.jpg" alt="Photo1">
+   <img src="1p.png" alt="Photo1">
+    <img src="2.jpg" alt="Photo2">
+    <img src="3.jpg" alt="Photo3">
+    <img src="4p.png" alt="Photo4">
+    <img src="5.jpeg" alt="Photo5">
+    <img src="6p.png" alt="Photo6">
+    <img src="7p.png" alt="Photo7">
+ 	<img src="8.jpg" alt="Photo1">
+    <img src="9p.png" alt="Photo2">
+    <img src="10p.png" alt="Photo3">
+    <img src="11p.png" alt="Photo4">
+    <img src="12.jpg" alt="Photo5">
+    <img src="13p.png" alt="Photo6">
+    <img src="14.jpg" alt="Photo7">
+<img src="15p.png" alt="Photo4">
+    <img src="16p.png" alt="Photo5">
+    <img src="17p.png" alt="Photo6">
+    <img src="18p.png" alt="Photo7">
+
+  </div>
 </div>
 </body>
 </html>
-
-
-
-
-
-
