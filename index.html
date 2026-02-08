@@ -166,7 +166,20 @@ function checkPassword() {
 <h1 style="margin: 1px 0;"> BCA - PYQ (Previous Year Question) </h1>
     <a href="pyq.html" class="semester-btn1">Part 1</a>
     <a href="ugsem-2.html" target="_blank" class="semester-btn1">Part 2</a>
-    <a href="https://hira24y7.github.io/part3/" target="_blank" class="semester-btn1">Part 3</a>
+    <a href=""#" onclick="checkPassword()"" target="_blank"class="semester-btn1">Part 3  </a>
+
+<script>
+function checkPassword() {
+    const correctPassword = "20232026";   // CHANGE THIS
+    let userPass = prompt("Enter Password:");
+
+    if (userPass === correctPassword) {
+        window.location.href = "https://hira24y7.github.io/part3/";  // target link
+    } else {
+        alert("❌ Wrong Password! Access Denied.");
+    }
+}
+</script>
 	<h1 style="margin: 1px 0;"> BCA - Test Series </h1>
     <a href="test.html" class="semester-btn2">Part 1</a>
     <a href="ugsem-2.html" target="_blank" class="semester-btn2">Part 2</a>
@@ -263,6 +276,7 @@ function checkPassword() {
 <img src="https://i.postimg.cc/4d38L51g/images-(14).jpg" alt="3in1store" width="300">
 </body>
 </html>
+
 
 
 
